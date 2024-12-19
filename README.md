@@ -1,2 +1,2 @@
 # nemethconcessions
-Used for the terraform and website code for the AWS hosted website
+Used for static site hosted in AWS
