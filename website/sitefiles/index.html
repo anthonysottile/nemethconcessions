@@ -6,15 +6,28 @@
     <title>Nemeth's Concessions</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-     .landing-image {
-    max-width: 750px;
-    height: auto;
-    margin: 0; /* Remove any margin */
-    padding: 0; /* Remove any padding */
-    border: none; /* Ensure no border is applied */
+.landing-image {
+    width: 100%; /* Make the image responsive */
+    max-width: 750px; /* Restrict the maximum size */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image horizontally */
+    border: none;
     margin-top: 1rem;
     border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+    .landing-image {
+        max-width: 90%; /* Slightly smaller image on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .landing-image {
+        max-width: 80%; /* Even smaller image for very small screens */
+    }
+}
+
     </style>
 </head>
 <body>
