@@ -2,8 +2,9 @@ name: Deploy Specific Folders to S3 and Invalidate CloudFront
 
 on:
   push:
-    branches:
-      - main  # Change this to your default branch if it's not 'main'
+    paths:
+      - 'website/images/**'
+      - 'website/sitefiles/**'
 
 jobs:
   deploy:
@@ -29,4 +30,4 @@ jobs:
       run: |
         aws cloudfront create-invalidation \
           --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
-          --paths "/website/images/*" "/website/sitefiles/*"
+          --paths "/*
