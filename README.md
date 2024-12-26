@@ -7,4 +7,4 @@ Was asked by a friend if I could create him a simple site to use for his busines
 
 Architecture:
 
-![alt text](static_site_nemeth.jpg)
+![alt text](static_site_nemeth.png)
