@@ -37,13 +37,118 @@ a {
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
-a:hover {
-    background-color: #000000;
-    color: white;
-    transform: scale(1.1);
-}
-
 ul {
     list-style: none;
     padding: 0;
 }
+
+.button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #000000;
+}
+
+/* Food truck section styling */
+.food-truck {
+    margin: 2rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* Truck container to group image and menu */
+.truck-container {
+    display: flex;
+    flex-direction: column; /* Stack the image and menu vertically */
+    align-items: center; /* Center content */
+    max-width: 600px; /* Restrict the overall width */
+    border: 3px solid #eaeaea; /* Add a border around the group */
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Prevent content from spilling out */
+}
+
+/* Truck image styling */
+.truck-image {
+    width: 100%; /* Full width within the container */
+    max-width: 600px;
+    height: auto;
+    display: block;
+}
+
+/* Menu container styling */
+.menu-container {
+    background-color: #000000; /* Red background for menu section */
+    padding: 1rem;
+    width: 100%; /* Match the width of the image */
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Menu list styling */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.menu li {
+    background-color: #ffffff; /* White background for items */
+    color: #000000; /* Red text */
+    margin: 0.5rem auto;
+    padding: 0.75rem;
+    border-radius: 5px;
+    max-width: 80%; /* Center the items and restrict width */
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add depth */
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.menu li:hover {
+    background-color: #000000; /* Red background on hover */
+    color: #ffffff; /* White text on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.social-icon {
+    display: flex; /* Use flex for better alignment */
+    justify-content: center; /* Center the icon horizontally */
+    align-items: center; /* Center the icon vertically */
+    width: 50px; /* Equal width and height */
+    height: 50px; /* Equal width and height */
+    color: #ffffff;
+    background-color: #1877f2; /* Facebook blue */
+    border-radius: 50%; /* Circular shape */
+    text-decoration: none;
+    margin: 10px; /* Space around the button */
+    font-size: 20px; /* Adjust icon size */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+    box-sizing: border-box; /* Include borders in size calculation */
+    padding: 0; /* Remove extra padding */
+}
+
+.social-icon.facebook:hover {
+    background-color: #145dbb; /* Darker Facebook blue on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.email-link {
+    color: #0000EE; /* Standard blue for hyperlinks */
+    text-decoration: none; /* Removes underline by default */
+    background: none; /* No background */
+    border: none; /* No border */
+    padding: 0; /* No padding */
+    cursor: pointer; /* Hand cursor on hover */
+  }
