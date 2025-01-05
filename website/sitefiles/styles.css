@@ -1,5 +1,5 @@
 body {
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #fdf6e3;
@@ -18,7 +18,7 @@ header {
 header h1 {
     margin: 0;
     font-size: 2rem; /* Smaller font size for a more balanced look */
-    font-family: 'Georgia', serif;
+    font-family: 'Lato', serif;
 }
 
 main {
@@ -35,6 +35,11 @@ a {
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
 }
 
 ul {
@@ -119,29 +124,6 @@ ul {
     background-color: #000000; /* Red background on hover */
     color: #ffffff; /* White text on hover */
     transform: scale(1.05); /* Slight zoom effect */
-}
-
-.social-icon {
-    display: flex; /* Use flex for better alignment */
-    justify-content: center; /* Center the icon horizontally */
-    align-items: center; /* Center the icon vertically */
-    width: 50px; /* Equal width and height */
-    height: 50px; /* Equal width and height */
-    color: #ffffff;
-    background-color: #1877f2; /* Facebook blue */
-    border-radius: 50%; /* Circular shape */
-    text-decoration: none;
-    margin: 10px; /* Space around the button */
-    font-size: 20px; /* Adjust icon size */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, background-color 0.3s;
-    box-sizing: border-box; /* Include borders in size calculation */
-    padding: 0; /* Remove extra padding */
-}
-
-.social-icon.facebook:hover {
-    background-color: #145dbb; /* Darker Facebook blue on hover */
-    transform: scale(1.1); /* Slight zoom effect */
 }
 
 .email-link {
